@@ -1,0 +1,3225 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/19/2017 1:35:43 PM"
+  DTS:CreationName="SSIS.Package.3"
+  DTS:CreatorComputerName="DESKTOP-GLMPMAG"
+  DTS:CreatorName="DESKTOP-GLMPMAG\NI"
+  DTS:DTSID="{537A9A71-B1CB-40EE-99EB-469AC4171C47}"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:LastModifiedProductVersion="11.0.2100.60"
+  DTS:LocaleID="2052"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{093683DE-8927-46B2-A6B8-94133EC28680}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{87855FF6-B06A-434B-9A3E-C1C87EDFE297}"
+      DTS:ObjectName="DESKTOP-GLMPMAG\NHJ">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-GLMPMAG\NHJ;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinAccounting]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{E2001204-299A-4C6A-96E2-7F327F4671C0}"
+      DTS:ObjectName="DESKTOP-GLMPMAG\NHJ.MaxMinAccounting">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-GLMPMAG\NHJ;Initial Catalog=MaxMinAccounting;Integrated Security=True;Application Name=SSIS-Package-{E2001204-299A-4C6A-96E2-7F327F4671C0}DESKTOP-GLMPMAG\NHJ.MaxMinAccounting;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinAccounting1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{4A0B3C45-E85F-4107-B324-323D1CBF6B11}"
+      DTS:ObjectName="DESKTOP-GLMPMAG\NHJ.MaxMinAccounting1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-GLMPMAG\NHJ;Initial Catalog=MaxMinAccounting;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{EC0F288A-FAE9-46C6-9894-3A7135BA0CD1}"
+      DTS:ObjectName="DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-GLMPMAG\NHJ;Initial Catalog=MaxMinfacturingDB;Integrated Security=True;Application Name=SSIS-Package-{EC0F288A-FAE9-46C6-9894-3A7135BA0CD1}DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{EC8703BE-BA57-4195-ACD4-4927DE122CD3}"
+      DTS:ObjectName="DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-GLMPMAG\NHJ;Initial Catalog=MaxMinfacturingDB;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{FB3CFB4E-E0D1-4C00-9027-36FE10F6C70B}"
+      DTS:ObjectName="DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-GLMPMAG\NHJ;Initial Catalog=MaxMinfacturingDB;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E72BE166-982B-4876-9837-5919A4ABE578}"
+      DTS:ObjectName="DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-GLMPMAG\NHJ;Initial Catalog=MaxMinfacturingDB;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Load   ProductType"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{4E109C5D-FFDC-4F84-BDB6-82251044A6CD}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load   ProductType"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load   ProductType\ADO NET Source"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="ADO NET Source"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement used by the component to extract data."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."ProductTypes"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the mode to retrieve external column information"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">0</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load   ProductType\ADO NET Source.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinAccounting]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinAccounting]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load   ProductType\ADO NET Source.Outputs[ADO NET Source Output]"
+                  name="ADO NET Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load   ProductType\ADO NET Source.Outputs[ADO NET Source Output].Columns[ProductTypeCode]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load   ProductType\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ProductTypeCode]"
+                      lineageId="Package\Load   ProductType\ADO NET Source.Outputs[ADO NET Source Output].Columns[ProductTypeCode]"
+                      name="ProductTypeCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load   ProductType\ADO NET Source.Outputs[ADO NET Source Output].Columns[ProductTypeName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load   ProductType\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ProductTypeName]"
+                      length="50"
+                      lineageId="Package\Load   ProductType\ADO NET Source.Outputs[ADO NET Source Output].Columns[ProductTypeName]"
+                      name="ProductTypeName"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load   ProductType\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ProductTypeCode]"
+                      dataType="i4"
+                      name="ProductTypeCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load   ProductType\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ProductTypeName]"
+                      dataType="wstr"
+                      length="50"
+                      name="ProductTypeName" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load   ProductType\ADO NET Source.Outputs[ADO NET Source Error Output]"
+                  isErrorOut="true"
+                  name="ADO NET Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load   ProductType\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ProductTypeCode]"
+                      dataType="i4"
+                      lineageId="Package\Load   ProductType\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ProductTypeCode]"
+                      name="ProductTypeCode" />
+                    <outputColumn
+                      refId="Package\Load   ProductType\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ProductTypeName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load   ProductType\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ProductTypeName]"
+                      name="ProductTypeName" />
+                    <outputColumn
+                      refId="Package\Load   ProductType\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load   ProductType\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load   ProductType\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load   ProductType\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load   ProductType\SQL Server Destination"
+              componentClassID="{F452EAF3-5EF0-43F1-8067-09DDF0BC6316}"
+              contactInfo="SQL Server Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;5"
+              description="SQL Server Destination"
+              name="SQL Server Destination"
+              version="5">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">936</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.String"
+                  description="The name of the database object to copy data into."
+                  expressionType="Notify"
+                  name="BulkInsertTableName">[dbo].[DimProduct]</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any constraints on the destination object are checked during the data copy operation. Corresponds to the bulk insert CHECK_CONSTRAINTS option."
+                  name="BulkInsertCheckConstraints">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the first row to copy. Corresponds to the bulk insert FIRSTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertFirstRow">-1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any insert triggers defined on the destination object will execute during the data copy. Corresponds to the bulk insert FIRE_TRIGGERS option."
+                  name="BulkInsertFireTriggers">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Corresponds to the bulk insert KEEPIDENTITY option."
+                  name="BulkInsertKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null copied to the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="BulkInsertKeepNulls">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the last row to copy. Corresponds to the bulk insert LASTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertLastRow">-1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of syntax errors and compilation errors that can occur before the data copy operation is canceled. Each row that cannot be copied is ignored and counted as one error. Corresponds to the bulk insert MAXERRORS option."
+                  name="BulkInsertMaxErrors">-1</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies how the data to be copied is sorted. Corresponds to the bulk insert ORDER option."
+                  expressionType="Notify"
+                  name="BulkInsertOrder"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that a table-level lock is acquired for the duration of the data copy operation. Corresponds to the bulk insert TABLOCK option."
+                  name="BulkInsertTablock">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies in seconds the amount of time the SQL Destination adapter will wait before terminating if there is no data available for insertion.  A timeout value of 0 means the SQL Destination adapter will not time out."
+                  expressionType="Notify"
+                  name="Timeout">30</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion."
+                  name="MaxInsertCommitSize">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load   ProductType\SQL Server Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load   ProductType\SQL Server Destination.Inputs[SQL Server Destination Input]"
+                  hasSideEffects="true"
+                  name="SQL Server Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load   ProductType\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[ProductTypeCode]"
+                      cachedDataType="i4"
+                      cachedName="ProductTypeCode"
+                      externalMetadataColumnId="Package\Load   ProductType\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[ProductSubTypeCode]"
+                      lineageId="Package\Load   ProductType\ADO NET Source.Outputs[ADO NET Source Output].Columns[ProductTypeCode]" />
+                    <inputColumn
+                      refId="Package\Load   ProductType\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[ProductTypeName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ProductTypeName"
+                      externalMetadataColumnId="Package\Load   ProductType\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[ProductName]"
+                      lineageId="Package\Load   ProductType\ADO NET Source.Outputs[ADO NET Source Output].Columns[ProductTypeName]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load   ProductType\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[ProductSubTypeCode]"
+                      dataType="i4"
+                      name="ProductSubTypeCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load   ProductType\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[ProductCode]"
+                      dataType="i4"
+                      name="ProductCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load   ProductType\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[ProductName]"
+                      dataType="wstr"
+                      length="50"
+                      name="ProductName" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load   ProductType.Paths[ADO NET Source Output]"
+              endId="Package\Load   ProductType\SQL Server Destination.Inputs[SQL Server Destination Input]"
+              name="ADO NET Source Output"
+              startId="Package\Load   ProductType\ADO NET Source.Outputs[ADO NET Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load Country"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{212A8EAF-CE3F-4BDD-BECB-05D73C29C492}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load Country"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load Country\ADO NET Source"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="ADO NET Source"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement used by the component to extract data."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."Countries"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the mode to retrieve external column information"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">0</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Country\ADO NET Source.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinAccounting]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinAccounting]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load Country\ADO NET Source.Outputs[ADO NET Source Output]"
+                  name="ADO NET Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Country\ADO NET Source.Outputs[ADO NET Source Output].Columns[CountryCode]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Country\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[CountryCode]"
+                      length="2"
+                      lineageId="Package\Load Country\ADO NET Source.Outputs[ADO NET Source Output].Columns[CountryCode]"
+                      name="CountryCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Country\ADO NET Source.Outputs[ADO NET Source Output].Columns[CountryName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Country\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[CountryName]"
+                      length="50"
+                      lineageId="Package\Load Country\ADO NET Source.Outputs[ADO NET Source Output].Columns[CountryName]"
+                      name="CountryName"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load Country\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[CountryCode]"
+                      dataType="wstr"
+                      length="2"
+                      name="CountryCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load Country\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[CountryName]"
+                      dataType="wstr"
+                      length="50"
+                      name="CountryName" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load Country\ADO NET Source.Outputs[ADO NET Source Error Output]"
+                  isErrorOut="true"
+                  name="ADO NET Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Country\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[CountryCode]"
+                      dataType="wstr"
+                      length="2"
+                      lineageId="Package\Load Country\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[CountryCode]"
+                      name="CountryCode" />
+                    <outputColumn
+                      refId="Package\Load Country\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[CountryName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load Country\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[CountryName]"
+                      name="CountryName" />
+                    <outputColumn
+                      refId="Package\Load Country\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Country\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load Country\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load Country\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load Country\SQL Server Destination"
+              componentClassID="{F452EAF3-5EF0-43F1-8067-09DDF0BC6316}"
+              contactInfo="SQL Server Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;5"
+              description="SQL Server Destination"
+              name="SQL Server Destination"
+              version="5">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">936</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.String"
+                  description="The name of the database object to copy data into."
+                  expressionType="Notify"
+                  name="BulkInsertTableName">[dbo].[Dimcountry]</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any constraints on the destination object are checked during the data copy operation. Corresponds to the bulk insert CHECK_CONSTRAINTS option."
+                  name="BulkInsertCheckConstraints">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the first row to copy. Corresponds to the bulk insert FIRSTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertFirstRow">-1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any insert triggers defined on the destination object will execute during the data copy. Corresponds to the bulk insert FIRE_TRIGGERS option."
+                  name="BulkInsertFireTriggers">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Corresponds to the bulk insert KEEPIDENTITY option."
+                  name="BulkInsertKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null copied to the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="BulkInsertKeepNulls">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the last row to copy. Corresponds to the bulk insert LASTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertLastRow">-1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of syntax errors and compilation errors that can occur before the data copy operation is canceled. Each row that cannot be copied is ignored and counted as one error. Corresponds to the bulk insert MAXERRORS option."
+                  name="BulkInsertMaxErrors">-1</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies how the data to be copied is sorted. Corresponds to the bulk insert ORDER option."
+                  expressionType="Notify"
+                  name="BulkInsertOrder"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that a table-level lock is acquired for the duration of the data copy operation. Corresponds to the bulk insert TABLOCK option."
+                  name="BulkInsertTablock">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies in seconds the amount of time the SQL Destination adapter will wait before terminating if there is no data available for insertion.  A timeout value of 0 means the SQL Destination adapter will not time out."
+                  expressionType="Notify"
+                  name="Timeout">30</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion."
+                  name="MaxInsertCommitSize">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Country\SQL Server Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load Country\SQL Server Destination.Inputs[SQL Server Destination Input]"
+                  hasSideEffects="true"
+                  name="SQL Server Destination Input">
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load Country\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[CountryCode]"
+                      dataType="wstr"
+                      length="2"
+                      name="CountryCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load Country\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[CountryName]"
+                      dataType="wstr"
+                      length="30"
+                      name="CountryName" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load Country.Paths[ADO NET Source Output]"
+              endId="Package\Load Country\SQL Server Destination.Inputs[SQL Server Destination Input]"
+              name="ADO NET Source Output"
+              startId="Package\Load Country\ADO NET Source.Outputs[ADO NET Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load Material-Machine Type-Machine"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{5383AF22-7966-427A-B41A-3ACE34F04217}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load Material-Machine Type-Machine"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load Material-Machine Type-Machine\ADO NET Source"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="ADO NET Source"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement used by the component to extract data."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."CapitalAssets"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the mode to retrieve external column information"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">0</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinAccounting]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinAccounting]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output]"
+                  name="ADO NET Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[AssetCode]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[AssetCode]"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[AssetCode]"
+                      name="AssetCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[AssetClass]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[AssetClass]"
+                      length="50"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[AssetClass]"
+                      name="AssetClass"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[AssetType]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[AssetType]"
+                      length="50"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[AssetType]"
+                      name="AssetType"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[AssetName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[AssetName]"
+                      length="50"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[AssetName]"
+                      name="AssetName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[LocationCode]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[LocationCode]"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[LocationCode]"
+                      name="LocationCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manufacturer]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manufacturer]"
+                      length="50"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manufacturer]"
+                      name="Manufacturer"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[DateOfPurchase]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[DateOfPurchase]"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[DateOfPurchase]"
+                      name="DateOfPurchase"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[PurchasePrice]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PurchasePrice]"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[PurchasePrice]"
+                      name="PurchasePrice"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[CostOfOperation]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[CostOfOperation]"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[CostOfOperation]"
+                      name="CostOfOperation"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[CostUnits]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[CostUnits]"
+                      length="10"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[CostUnits]"
+                      name="CostUnits"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[DepreciationPeriod]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[DepreciationPeriod]"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[DepreciationPeriod]"
+                      name="DepreciationPeriod"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[RawMaterial]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[RawMaterial]"
+                      length="50"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[RawMaterial]"
+                      name="RawMaterial"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[AssetCode]"
+                      dataType="i4"
+                      name="AssetCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[AssetClass]"
+                      dataType="wstr"
+                      length="50"
+                      name="AssetClass" />
+                    <externalMetadataColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[AssetType]"
+                      dataType="wstr"
+                      length="50"
+                      name="AssetType" />
+                    <externalMetadataColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[AssetName]"
+                      dataType="wstr"
+                      length="50"
+                      name="AssetName" />
+                    <externalMetadataColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[LocationCode]"
+                      dataType="i4"
+                      name="LocationCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Manufacturer]"
+                      dataType="wstr"
+                      length="50"
+                      name="Manufacturer" />
+                    <externalMetadataColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[DateOfPurchase]"
+                      dataType="dbTimeStamp"
+                      name="DateOfPurchase" />
+                    <externalMetadataColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PurchasePrice]"
+                      dataType="cy"
+                      name="PurchasePrice" />
+                    <externalMetadataColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[CostOfOperation]"
+                      dataType="cy"
+                      name="CostOfOperation" />
+                    <externalMetadataColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[CostUnits]"
+                      dataType="wstr"
+                      length="10"
+                      name="CostUnits" />
+                    <externalMetadataColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[DepreciationPeriod]"
+                      dataType="i4"
+                      name="DepreciationPeriod" />
+                    <externalMetadataColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[RawMaterial]"
+                      dataType="wstr"
+                      length="50"
+                      name="RawMaterial" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output]"
+                  isErrorOut="true"
+                  name="ADO NET Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[AssetCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[AssetCode]"
+                      name="AssetCode" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[AssetClass]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[AssetClass]"
+                      name="AssetClass" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[AssetType]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[AssetType]"
+                      name="AssetType" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[AssetName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[AssetName]"
+                      name="AssetName" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[LocationCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[LocationCode]"
+                      name="LocationCode" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manufacturer]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Manufacturer]"
+                      name="Manufacturer" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[DateOfPurchase]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[DateOfPurchase]"
+                      name="DateOfPurchase" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PurchasePrice]"
+                      dataType="cy"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PurchasePrice]"
+                      name="PurchasePrice" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[CostOfOperation]"
+                      dataType="cy"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[CostOfOperation]"
+                      name="CostOfOperation" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[CostUnits]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[CostUnits]"
+                      name="CostUnits" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[DepreciationPeriod]"
+                      dataType="i4"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[DepreciationPeriod]"
+                      name="DepreciationPeriod" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[RawMaterial]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[RawMaterial]"
+                      name="RawMaterial" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load Material-Machine Type-Machine\Aggregate by Machine Type"
+              componentClassID="{5B201335-B360-485C-BB93-75C34E09B3D3}"
+              contactInfo="Aggregate;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
+              description="Aggregates data with functions such as Average, Sum, Count, Max, and Min. For example, group data to compute the sum of sales per product or the average visits per day."
+              name="Aggregate by Machine Type"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                  name="KeyScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                  name="Keys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of distinct values in a column that the aggregation counts distinctly. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no CountDistinctScale value is used."
+                  name="CountDistinctScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of distinct values in a column that the aggregation counts distinctly. If a CountDistinctScale value is specified, the value in CountDistinctKeys takes precedence."
+                  name="CountDistinctKeys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage by which memory can be extended during the aggregation. Valid values are between 1 and 100."
+                  name="AutoExtendFactor">25</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Load Material-Machine Type-Machine\Aggregate by Machine Type.Inputs[Aggregate Input 1]"
+                  name="Aggregate Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load Material-Machine Type-Machine\Aggregate by Machine Type.Inputs[Aggregate Input 1].Columns[AssetClass]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="AssetClass"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[AssetClass]" />
+                    <inputColumn
+                      refId="Package\Load Material-Machine Type-Machine\Aggregate by Machine Type.Inputs[Aggregate Input 1].Columns[RawMaterial]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="RawMaterial"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[RawMaterial]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load Material-Machine Type-Machine\Aggregate by Machine Type.Outputs[Aggregate Output 1]"
+                  name="Aggregate Output 1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                      name="KeyScale"
+                      typeConverter="KeyScaleType">0</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                      name="Keys" />
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\Aggregate by Machine Type.Outputs[Aggregate Output 1].Columns[MaterialType]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load Material-Machine Type-Machine\Aggregate by Machine Type.Outputs[Aggregate Output 1].Columns[MaterialType]"
+                      name="MaterialType">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[AssetClass]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\Aggregate by Machine Type.Outputs[Aggregate Output 1].Columns[RawMaterial]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load Material-Machine Type-Machine\Aggregate by Machine Type.Outputs[Aggregate Output 1].Columns[RawMaterial]"
+                      name="RawMaterial">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[RawMaterial]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load Material-Machine Type-Machine\Aggregate By Material"
+              componentClassID="{5B201335-B360-485C-BB93-75C34E09B3D3}"
+              contactInfo="Aggregate;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
+              description="Aggregates data with functions such as Average, Sum, Count, Max, and Min. For example, group data to compute the sum of sales per product or the average visits per day."
+              name="Aggregate By Material"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                  name="KeyScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                  name="Keys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of distinct values in a column that the aggregation counts distinctly. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no CountDistinctScale value is used."
+                  name="CountDistinctScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of distinct values in a column that the aggregation counts distinctly. If a CountDistinctScale value is specified, the value in CountDistinctKeys takes precedence."
+                  name="CountDistinctKeys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage by which memory can be extended during the aggregation. Valid values are between 1 and 100."
+                  name="AutoExtendFactor">25</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Load Material-Machine Type-Machine\Aggregate By Material.Inputs[Aggregate Input 1]"
+                  name="Aggregate Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load Material-Machine Type-Machine\Aggregate By Material.Inputs[Aggregate Input 1].Columns[RawMaterial]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="RawMaterial"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[RawMaterial]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load Material-Machine Type-Machine\Aggregate By Material.Outputs[Aggregate Output 1]"
+                  name="Aggregate Output 1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                      name="KeyScale"
+                      typeConverter="KeyScaleType">0</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                      name="Keys" />
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\Aggregate By Material.Outputs[Aggregate Output 1].Columns[Material]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load Material-Machine Type-Machine\Aggregate By Material.Outputs[Aggregate Output 1].Columns[Material]"
+                      name="Material">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[RawMaterial]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load Material-Machine Type-Machine\DimMachine"
+              componentClassID="{F452EAF3-5EF0-43F1-8067-09DDF0BC6316}"
+              contactInfo="SQL Server Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;5"
+              description="SQL Server Destination"
+              name="DimMachine"
+              version="5">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">936</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.String"
+                  description="The name of the database object to copy data into."
+                  expressionType="Notify"
+                  name="BulkInsertTableName">[dbo].[DImMachine]</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any constraints on the destination object are checked during the data copy operation. Corresponds to the bulk insert CHECK_CONSTRAINTS option."
+                  name="BulkInsertCheckConstraints">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the first row to copy. Corresponds to the bulk insert FIRSTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertFirstRow">-1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any insert triggers defined on the destination object will execute during the data copy. Corresponds to the bulk insert FIRE_TRIGGERS option."
+                  name="BulkInsertFireTriggers">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Corresponds to the bulk insert KEEPIDENTITY option."
+                  name="BulkInsertKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null copied to the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="BulkInsertKeepNulls">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the last row to copy. Corresponds to the bulk insert LASTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertLastRow">-1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of syntax errors and compilation errors that can occur before the data copy operation is canceled. Each row that cannot be copied is ignored and counted as one error. Corresponds to the bulk insert MAXERRORS option."
+                  name="BulkInsertMaxErrors">-1</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies how the data to be copied is sorted. Corresponds to the bulk insert ORDER option."
+                  expressionType="Notify"
+                  name="BulkInsertOrder"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that a table-level lock is acquired for the duration of the data copy operation. Corresponds to the bulk insert TABLOCK option."
+                  name="BulkInsertTablock">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies in seconds the amount of time the SQL Destination adapter will wait before terminating if there is no data available for insertion.  A timeout value of 0 means the SQL Destination adapter will not time out."
+                  expressionType="Notify"
+                  name="Timeout">30</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion."
+                  name="MaxInsertCommitSize">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Material-Machine Type-Machine\DimMachine.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load Material-Machine Type-Machine\DimMachine.Inputs[SQL Server Destination Input]"
+                  hasSideEffects="true"
+                  name="SQL Server Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load Material-Machine Type-Machine\DimMachine.Inputs[SQL Server Destination Input].Columns[Manufacturer]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Manufacturer"
+                      externalMetadataColumnId="Package\Load Material-Machine Type-Machine\DimMachine.Inputs[SQL Server Destination Input].ExternalColumns[Manufacturer]"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[Manufacturer]" />
+                    <inputColumn
+                      refId="Package\Load Material-Machine Type-Machine\DimMachine.Inputs[SQL Server Destination Input].Columns[DateOfPurchase]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="DateOfPurchase"
+                      externalMetadataColumnId="Package\Load Material-Machine Type-Machine\DimMachine.Inputs[SQL Server Destination Input].ExternalColumns[DateOfPurchase]"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[DateOfPurchase]" />
+                    <inputColumn
+                      refId="Package\Load Material-Machine Type-Machine\DimMachine.Inputs[SQL Server Destination Input].Columns[AssetCode]"
+                      cachedDataType="i4"
+                      cachedName="AssetCode"
+                      externalMetadataColumnId="Package\Load Material-Machine Type-Machine\DimMachine.Inputs[SQL Server Destination Input].ExternalColumns[MachineNumber]"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[AssetCode]" />
+                    <inputColumn
+                      refId="Package\Load Material-Machine Type-Machine\DimMachine.Inputs[SQL Server Destination Input].Columns[AssetClass]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="AssetClass"
+                      externalMetadataColumnId="Package\Load Material-Machine Type-Machine\DimMachine.Inputs[SQL Server Destination Input].ExternalColumns[MachineType]"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[AssetClass]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load Material-Machine Type-Machine\DimMachine.Inputs[SQL Server Destination Input].ExternalColumns[MachineNumber]"
+                      dataType="i4"
+                      name="MachineNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Load Material-Machine Type-Machine\DimMachine.Inputs[SQL Server Destination Input].ExternalColumns[MachineName]"
+                      dataType="wstr"
+                      length="50"
+                      name="MachineName" />
+                    <externalMetadataColumn
+                      refId="Package\Load Material-Machine Type-Machine\DimMachine.Inputs[SQL Server Destination Input].ExternalColumns[MachineType]"
+                      dataType="wstr"
+                      length="50"
+                      name="MachineType" />
+                    <externalMetadataColumn
+                      refId="Package\Load Material-Machine Type-Machine\DimMachine.Inputs[SQL Server Destination Input].ExternalColumns[PlantNumber]"
+                      dataType="i4"
+                      name="PlantNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Load Material-Machine Type-Machine\DimMachine.Inputs[SQL Server Destination Input].ExternalColumns[Manufacturer]"
+                      dataType="wstr"
+                      length="1"
+                      name="Manufacturer" />
+                    <externalMetadataColumn
+                      refId="Package\Load Material-Machine Type-Machine\DimMachine.Inputs[SQL Server Destination Input].ExternalColumns[DateOfPurchase]"
+                      dataType="dbTimeStamp"
+                      name="DateOfPurchase" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Load Material-Machine Type-Machine\DimMachineType"
+              componentClassID="{F452EAF3-5EF0-43F1-8067-09DDF0BC6316}"
+              contactInfo="SQL Server Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;5"
+              description="SQL Server Destination"
+              name="DimMachineType"
+              version="5">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">936</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.String"
+                  description="The name of the database object to copy data into."
+                  expressionType="Notify"
+                  name="BulkInsertTableName">[dbo].[DimMachineType]</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any constraints on the destination object are checked during the data copy operation. Corresponds to the bulk insert CHECK_CONSTRAINTS option."
+                  name="BulkInsertCheckConstraints">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the first row to copy. Corresponds to the bulk insert FIRSTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertFirstRow">-1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any insert triggers defined on the destination object will execute during the data copy. Corresponds to the bulk insert FIRE_TRIGGERS option."
+                  name="BulkInsertFireTriggers">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Corresponds to the bulk insert KEEPIDENTITY option."
+                  name="BulkInsertKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null copied to the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="BulkInsertKeepNulls">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the last row to copy. Corresponds to the bulk insert LASTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertLastRow">-1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of syntax errors and compilation errors that can occur before the data copy operation is canceled. Each row that cannot be copied is ignored and counted as one error. Corresponds to the bulk insert MAXERRORS option."
+                  name="BulkInsertMaxErrors">-1</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies how the data to be copied is sorted. Corresponds to the bulk insert ORDER option."
+                  expressionType="Notify"
+                  name="BulkInsertOrder"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that a table-level lock is acquired for the duration of the data copy operation. Corresponds to the bulk insert TABLOCK option."
+                  name="BulkInsertTablock">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies in seconds the amount of time the SQL Destination adapter will wait before terminating if there is no data available for insertion.  A timeout value of 0 means the SQL Destination adapter will not time out."
+                  expressionType="Notify"
+                  name="Timeout">30</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion."
+                  name="MaxInsertCommitSize">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Material-Machine Type-Machine\DimMachineType.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load Material-Machine Type-Machine\DimMachineType.Inputs[SQL Server Destination Input]"
+                  hasSideEffects="true"
+                  name="SQL Server Destination Input">
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load Material-Machine Type-Machine\DimMachineType.Inputs[SQL Server Destination Input].ExternalColumns[MachineType]"
+                      dataType="wstr"
+                      length="30"
+                      name="MachineType" />
+                    <externalMetadataColumn
+                      refId="Package\Load Material-Machine Type-Machine\DimMachineType.Inputs[SQL Server Destination Input].ExternalColumns[Material]"
+                      dataType="wstr"
+                      length="30"
+                      name="Material" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Load Material-Machine Type-Machine\DimNatural"
+              componentClassID="{F452EAF3-5EF0-43F1-8067-09DDF0BC6316}"
+              contactInfo="SQL Server Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;5"
+              description="SQL Server Destination"
+              name="DimNatural"
+              version="5">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">936</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.String"
+                  description="The name of the database object to copy data into."
+                  expressionType="Notify"
+                  name="BulkInsertTableName">[dbo].[DimMaterial]</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any constraints on the destination object are checked during the data copy operation. Corresponds to the bulk insert CHECK_CONSTRAINTS option."
+                  name="BulkInsertCheckConstraints">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the first row to copy. Corresponds to the bulk insert FIRSTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertFirstRow">-1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any insert triggers defined on the destination object will execute during the data copy. Corresponds to the bulk insert FIRE_TRIGGERS option."
+                  name="BulkInsertFireTriggers">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Corresponds to the bulk insert KEEPIDENTITY option."
+                  name="BulkInsertKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null copied to the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="BulkInsertKeepNulls">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the last row to copy. Corresponds to the bulk insert LASTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertLastRow">-1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of syntax errors and compilation errors that can occur before the data copy operation is canceled. Each row that cannot be copied is ignored and counted as one error. Corresponds to the bulk insert MAXERRORS option."
+                  name="BulkInsertMaxErrors">-1</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies how the data to be copied is sorted. Corresponds to the bulk insert ORDER option."
+                  expressionType="Notify"
+                  name="BulkInsertOrder"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that a table-level lock is acquired for the duration of the data copy operation. Corresponds to the bulk insert TABLOCK option."
+                  name="BulkInsertTablock">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies in seconds the amount of time the SQL Destination adapter will wait before terminating if there is no data available for insertion.  A timeout value of 0 means the SQL Destination adapter will not time out."
+                  expressionType="Notify"
+                  name="Timeout">30</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion."
+                  name="MaxInsertCommitSize">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Material-Machine Type-Machine\DimNatural.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load Material-Machine Type-Machine\DimNatural.Inputs[SQL Server Destination Input]"
+                  hasSideEffects="true"
+                  name="SQL Server Destination Input">
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load Material-Machine Type-Machine\DimNatural.Inputs[SQL Server Destination Input].ExternalColumns[Material]"
+                      dataType="wstr"
+                      length="30"
+                      name="Material" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Load Material-Machine Type-Machine\File For Molding Machines"
+              componentClassID="{7F88F654-4E20-4D14-84F4-AF9C925D3087}"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="File For Molding Machines"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Load Material-Machine Type-Machine\File For Molding Machines.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load Material-Machine Type-Machine\File For Molding Machines.Inputs[Conditional Split Input].Columns[AssetType]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="AssetType"
+                      lineageId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[AssetType]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load Material-Machine Type-Machine\File For Molding Machines.Outputs[Molding Machine Records]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Molding Machine Records"
+                  synchronousInputId="Package\Load Material-Machine Type-Machine\File For Molding Machines.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output].Columns[AssetType]} == "Molding Machine"</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">AssetType == "Molding Machine"</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load Material-Machine Type-Machine\File For Molding Machines.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\Load Material-Machine Type-Machine\File For Molding Machines.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load Material-Machine Type-Machine\File For Molding Machines.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Load Material-Machine Type-Machine\File For Molding Machines.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\File For Molding Machines.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Material-Machine Type-Machine\File For Molding Machines.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load Material-Machine Type-Machine\File For Molding Machines.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load Material-Machine Type-Machine\File For Molding Machines.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load Material-Machine Type-Machine\Multicast"
+              componentClassID="{EC139FBC-694E-490B-8EA7-35690FB0F445}"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast">
+              <inputs>
+                <input
+                  refId="Package\Load Material-Machine Type-Machine\Multicast.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load Material-Machine Type-Machine\Multicast.Outputs[Multicast Output 1]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\Load Material-Machine Type-Machine\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load Material-Machine Type-Machine\Multicast.Outputs[Multicast Output 2]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 2"
+                  synchronousInputId="Package\Load Material-Machine Type-Machine\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load Material-Machine Type-Machine\Multicast.Outputs[Multicast Output 3]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 3"
+                  synchronousInputId="Package\Load Material-Machine Type-Machine\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load Material-Machine Type-Machine\Multicast.Outputs[Multicast Output 4]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 4"
+                  synchronousInputId="Package\Load Material-Machine Type-Machine\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load Material-Machine Type-Machine.Paths[ADO NET Source Output]"
+              endId="Package\Load Material-Machine Type-Machine\File For Molding Machines.Inputs[Conditional Split Input]"
+              name="ADO NET Source Output"
+              startId="Package\Load Material-Machine Type-Machine\ADO NET Source.Outputs[ADO NET Source Output]" />
+            <path
+              refId="Package\Load Material-Machine Type-Machine.Paths[Aggregate Output 1]"
+              endId="Package\Load Material-Machine Type-Machine\DimNatural.Inputs[SQL Server Destination Input]"
+              name="Aggregate Output 1"
+              startId="Package\Load Material-Machine Type-Machine\Aggregate By Material.Outputs[Aggregate Output 1]" />
+            <path
+              refId="Package\Load Material-Machine Type-Machine.Paths[Aggregate Output 11]"
+              endId="Package\Load Material-Machine Type-Machine\DimMachineType.Inputs[SQL Server Destination Input]"
+              name="Aggregate Output 1"
+              startId="Package\Load Material-Machine Type-Machine\Aggregate by Machine Type.Outputs[Aggregate Output 1]" />
+            <path
+              refId="Package\Load Material-Machine Type-Machine.Paths[Conditional Split Default Output]"
+              endId="Package\Load Material-Machine Type-Machine\Multicast.Inputs[Multicast Input 1]"
+              name="Conditional Split Default Output"
+              startId="Package\Load Material-Machine Type-Machine\File For Molding Machines.Outputs[Conditional Split Default Output]" />
+            <path
+              refId="Package\Load Material-Machine Type-Machine.Paths[Multicast Output 1]"
+              endId="Package\Load Material-Machine Type-Machine\Aggregate By Material.Inputs[Aggregate Input 1]"
+              name="Multicast Output 1"
+              startId="Package\Load Material-Machine Type-Machine\Multicast.Outputs[Multicast Output 1]" />
+            <path
+              refId="Package\Load Material-Machine Type-Machine.Paths[Multicast Output 2]"
+              endId="Package\Load Material-Machine Type-Machine\Aggregate by Machine Type.Inputs[Aggregate Input 1]"
+              name="Multicast Output 2"
+              startId="Package\Load Material-Machine Type-Machine\Multicast.Outputs[Multicast Output 2]" />
+            <path
+              refId="Package\Load Material-Machine Type-Machine.Paths[Multicast Output 3]"
+              endId="Package\Load Material-Machine Type-Machine\DimMachine.Inputs[SQL Server Destination Input]"
+              name="Multicast Output 3"
+              startId="Package\Load Material-Machine Type-Machine\Multicast.Outputs[Multicast Output 3]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load Plant"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{CD5983A6-5DE0-4896-B2FC-2873C6E38DC1}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load Plant"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load Plant\ADO NET Source"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="ADO NET Source"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement used by the component to extract data."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">Select LocationCode AS PlantNumber,
+LocationName AS PlantName,
+CountryCode
+FROM Locations
+WHERE locationType='Plant Site'</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the mode to retrieve external column information"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Plant\ADO NET Source.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinAccounting]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinAccounting]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Output]"
+                  name="ADO NET Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Output].Columns[PlantNumber]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PlantNumber]"
+                      lineageId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Output].Columns[PlantNumber]"
+                      name="PlantNumber"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Output].Columns[PlantName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PlantName]"
+                      length="50"
+                      lineageId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Output].Columns[PlantName]"
+                      name="PlantName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Output].Columns[CountryCode]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[CountryCode]"
+                      length="10"
+                      lineageId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Output].Columns[CountryCode]"
+                      name="CountryCode"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PlantNumber]"
+                      dataType="i4"
+                      name="PlantNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PlantName]"
+                      dataType="wstr"
+                      length="50"
+                      name="PlantName" />
+                    <externalMetadataColumn
+                      refId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[CountryCode]"
+                      dataType="wstr"
+                      length="10"
+                      name="CountryCode" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Error Output]"
+                  isErrorOut="true"
+                  name="ADO NET Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PlantNumber]"
+                      dataType="i4"
+                      lineageId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PlantNumber]"
+                      name="PlantNumber" />
+                    <outputColumn
+                      refId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PlantName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PlantName]"
+                      name="PlantName" />
+                    <outputColumn
+                      refId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[CountryCode]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[CountryCode]"
+                      name="CountryCode" />
+                    <outputColumn
+                      refId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load Plant\SQL Server Destination"
+              componentClassID="{F452EAF3-5EF0-43F1-8067-09DDF0BC6316}"
+              contactInfo="SQL Server Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;5"
+              description="SQL Server Destination"
+              name="SQL Server Destination"
+              version="5">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">936</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.String"
+                  description="The name of the database object to copy data into."
+                  expressionType="Notify"
+                  name="BulkInsertTableName">[dbo].[DimPlant]</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any constraints on the destination object are checked during the data copy operation. Corresponds to the bulk insert CHECK_CONSTRAINTS option."
+                  name="BulkInsertCheckConstraints">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the first row to copy. Corresponds to the bulk insert FIRSTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertFirstRow">-1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any insert triggers defined on the destination object will execute during the data copy. Corresponds to the bulk insert FIRE_TRIGGERS option."
+                  name="BulkInsertFireTriggers">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Corresponds to the bulk insert KEEPIDENTITY option."
+                  name="BulkInsertKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null copied to the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="BulkInsertKeepNulls">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the last row to copy. Corresponds to the bulk insert LASTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertLastRow">-1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of syntax errors and compilation errors that can occur before the data copy operation is canceled. Each row that cannot be copied is ignored and counted as one error. Corresponds to the bulk insert MAXERRORS option."
+                  name="BulkInsertMaxErrors">-1</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies how the data to be copied is sorted. Corresponds to the bulk insert ORDER option."
+                  expressionType="Notify"
+                  name="BulkInsertOrder"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that a table-level lock is acquired for the duration of the data copy operation. Corresponds to the bulk insert TABLOCK option."
+                  name="BulkInsertTablock">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies in seconds the amount of time the SQL Destination adapter will wait before terminating if there is no data available for insertion.  A timeout value of 0 means the SQL Destination adapter will not time out."
+                  expressionType="Notify"
+                  name="Timeout">30</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion."
+                  name="MaxInsertCommitSize">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Plant\SQL Server Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load Plant\SQL Server Destination.Inputs[SQL Server Destination Input]"
+                  hasSideEffects="true"
+                  name="SQL Server Destination Input">
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load Plant\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[PlantNumber]"
+                      dataType="i4"
+                      name="PlantNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Load Plant\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[PlantName]"
+                      dataType="wstr"
+                      length="30"
+                      name="PlantName" />
+                    <externalMetadataColumn
+                      refId="Package\Load Plant\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[CountryCode]"
+                      dataType="wstr"
+                      length="2"
+                      name="CountryCode" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load Plant.Paths[ADO NET Source Output]"
+              endId="Package\Load Plant\SQL Server Destination.Inputs[SQL Server Destination Input]"
+              name="ADO NET Source Output"
+              startId="Package\Load Plant\ADO NET Source.Outputs[ADO NET Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load Product"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{877E3123-042B-4C50-AFC4-8ECAD62EB78A}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load Product"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load Product\ADO NET Source"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="ADO NET Source"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement used by the component to extract data."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."Products"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the mode to retrieve external column information"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">0</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Product\ADO NET Source.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinAccounting]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinAccounting]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output]"
+                  name="ADO NET Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output].Columns[ProductCode]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ProductCode]"
+                      lineageId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output].Columns[ProductCode]"
+                      name="ProductCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output].Columns[ProductName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ProductName]"
+                      length="50"
+                      lineageId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output].Columns[ProductName]"
+                      name="ProductName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output].Columns[ProductSubtypeCode]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ProductSubtypeCode]"
+                      lineageId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output].Columns[ProductSubtypeCode]"
+                      name="ProductSubtypeCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output].Columns[RawMaterial]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[RawMaterial]"
+                      length="50"
+                      lineageId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output].Columns[RawMaterial]"
+                      name="RawMaterial"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output].Columns[AmountOfRawMaterial]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[AmountOfRawMaterial]"
+                      lineageId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output].Columns[AmountOfRawMaterial]"
+                      name="AmountOfRawMaterial"
+                      precision="18"
+                      scale="3"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ProductCode]"
+                      dataType="i4"
+                      name="ProductCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ProductName]"
+                      dataType="wstr"
+                      length="50"
+                      name="ProductName" />
+                    <externalMetadataColumn
+                      refId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ProductSubtypeCode]"
+                      dataType="i4"
+                      name="ProductSubtypeCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[RawMaterial]"
+                      dataType="wstr"
+                      length="50"
+                      name="RawMaterial" />
+                    <externalMetadataColumn
+                      refId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[AmountOfRawMaterial]"
+                      dataType="numeric"
+                      name="AmountOfRawMaterial"
+                      precision="18"
+                      scale="3" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Error Output]"
+                  isErrorOut="true"
+                  name="ADO NET Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ProductCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ProductCode]"
+                      name="ProductCode" />
+                    <outputColumn
+                      refId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ProductName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ProductName]"
+                      name="ProductName" />
+                    <outputColumn
+                      refId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ProductSubtypeCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ProductSubtypeCode]"
+                      name="ProductSubtypeCode" />
+                    <outputColumn
+                      refId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[RawMaterial]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[RawMaterial]"
+                      name="RawMaterial" />
+                    <outputColumn
+                      refId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[AmountOfRawMaterial]"
+                      dataType="numeric"
+                      lineageId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[AmountOfRawMaterial]"
+                      name="AmountOfRawMaterial"
+                      precision="18"
+                      scale="3" />
+                    <outputColumn
+                      refId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load Product\SQL Server Destination"
+              componentClassID="{F452EAF3-5EF0-43F1-8067-09DDF0BC6316}"
+              contactInfo="SQL Server Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;5"
+              description="SQL Server Destination"
+              name="SQL Server Destination"
+              version="5">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">936</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.String"
+                  description="The name of the database object to copy data into."
+                  expressionType="Notify"
+                  name="BulkInsertTableName">[dbo].[DimProduct]</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any constraints on the destination object are checked during the data copy operation. Corresponds to the bulk insert CHECK_CONSTRAINTS option."
+                  name="BulkInsertCheckConstraints">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the first row to copy. Corresponds to the bulk insert FIRSTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertFirstRow">-1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any insert triggers defined on the destination object will execute during the data copy. Corresponds to the bulk insert FIRE_TRIGGERS option."
+                  name="BulkInsertFireTriggers">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Corresponds to the bulk insert KEEPIDENTITY option."
+                  name="BulkInsertKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null copied to the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="BulkInsertKeepNulls">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the last row to copy. Corresponds to the bulk insert LASTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertLastRow">-1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of syntax errors and compilation errors that can occur before the data copy operation is canceled. Each row that cannot be copied is ignored and counted as one error. Corresponds to the bulk insert MAXERRORS option."
+                  name="BulkInsertMaxErrors">-1</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies how the data to be copied is sorted. Corresponds to the bulk insert ORDER option."
+                  expressionType="Notify"
+                  name="BulkInsertOrder"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that a table-level lock is acquired for the duration of the data copy operation. Corresponds to the bulk insert TABLOCK option."
+                  name="BulkInsertTablock">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies in seconds the amount of time the SQL Destination adapter will wait before terminating if there is no data available for insertion.  A timeout value of 0 means the SQL Destination adapter will not time out."
+                  expressionType="Notify"
+                  name="Timeout">30</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion."
+                  name="MaxInsertCommitSize">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Product\SQL Server Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load Product\SQL Server Destination.Inputs[SQL Server Destination Input]"
+                  hasSideEffects="true"
+                  name="SQL Server Destination Input">
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load Product\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[ProductCode]"
+                      dataType="i4"
+                      name="ProductCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load Product\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[ProductName]"
+                      dataType="wstr"
+                      length="50"
+                      name="ProductName" />
+                    <externalMetadataColumn
+                      refId="Package\Load Product\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[ProductSubTypeCode]"
+                      dataType="i4"
+                      name="ProductSubTypeCode" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load Product.Paths[ADO NET Source Output]"
+              endId="Package\Load Product\SQL Server Destination.Inputs[SQL Server Destination Input]"
+              name="ADO NET Source Output"
+              startId="Package\Load Product\ADO NET Source.Outputs[ADO NET Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load ProductSubType"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{36073A4F-2AD0-48C9-893E-57C64BA97114}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load ProductSubType"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load ProductSubType\ADO NET Source"
+              componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="ADO NET Source"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement used by the component to extract data."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"dbo"."ProductSubtypes"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the mode to retrieve external column information"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">0</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load ProductSubType\ADO NET Source.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinAccounting]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinAccounting]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Output]"
+                  name="ADO NET Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Output].Columns[ProductSubtypeCode]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ProductSubtypeCode]"
+                      lineageId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Output].Columns[ProductSubtypeCode]"
+                      name="ProductSubtypeCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Output].Columns[ProductSubtypeName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ProductSubtypeName]"
+                      length="50"
+                      lineageId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Output].Columns[ProductSubtypeName]"
+                      name="ProductSubtypeName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Output].Columns[ProductTypeCode]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ProductTypeCode]"
+                      lineageId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Output].Columns[ProductTypeCode]"
+                      name="ProductTypeCode"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ProductSubtypeCode]"
+                      dataType="i4"
+                      name="ProductSubtypeCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ProductSubtypeName]"
+                      dataType="wstr"
+                      length="50"
+                      name="ProductSubtypeName" />
+                    <externalMetadataColumn
+                      refId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ProductTypeCode]"
+                      dataType="i4"
+                      name="ProductTypeCode" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Error Output]"
+                  isErrorOut="true"
+                  name="ADO NET Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ProductSubtypeCode]"
+                      dataType="i4"
+                      lineageId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ProductSubtypeCode]"
+                      name="ProductSubtypeCode" />
+                    <outputColumn
+                      refId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ProductSubtypeName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ProductSubtypeName]"
+                      name="ProductSubtypeName" />
+                    <outputColumn
+                      refId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ProductTypeCode]"
+                      dataType="i4"
+                      lineageId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ProductTypeCode]"
+                      name="ProductTypeCode" />
+                    <outputColumn
+                      refId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load ProductSubType\SQL Server Destination"
+              componentClassID="{F452EAF3-5EF0-43F1-8067-09DDF0BC6316}"
+              contactInfo="SQL Server Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;5"
+              description="SQL Server Destination"
+              name="SQL Server Destination"
+              version="5">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">936</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.String"
+                  description="The name of the database object to copy data into."
+                  expressionType="Notify"
+                  name="BulkInsertTableName">[dbo].[DimProductType]</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any constraints on the destination object are checked during the data copy operation. Corresponds to the bulk insert CHECK_CONSTRAINTS option."
+                  name="BulkInsertCheckConstraints">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the first row to copy. Corresponds to the bulk insert FIRSTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertFirstRow">-1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any insert triggers defined on the destination object will execute during the data copy. Corresponds to the bulk insert FIRE_TRIGGERS option."
+                  name="BulkInsertFireTriggers">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Corresponds to the bulk insert KEEPIDENTITY option."
+                  name="BulkInsertKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null copied to the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="BulkInsertKeepNulls">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the last row to copy. Corresponds to the bulk insert LASTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertLastRow">-1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of syntax errors and compilation errors that can occur before the data copy operation is canceled. Each row that cannot be copied is ignored and counted as one error. Corresponds to the bulk insert MAXERRORS option."
+                  name="BulkInsertMaxErrors">-1</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies how the data to be copied is sorted. Corresponds to the bulk insert ORDER option."
+                  expressionType="Notify"
+                  name="BulkInsertOrder"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that a table-level lock is acquired for the duration of the data copy operation. Corresponds to the bulk insert TABLOCK option."
+                  name="BulkInsertTablock">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies in seconds the amount of time the SQL Destination adapter will wait before terminating if there is no data available for insertion.  A timeout value of 0 means the SQL Destination adapter will not time out."
+                  expressionType="Notify"
+                  name="Timeout">30</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion."
+                  name="MaxInsertCommitSize">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load ProductSubType\SQL Server Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-GLMPMAG\NHJ.MaxMinfacturingDB1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load ProductSubType\SQL Server Destination.Inputs[SQL Server Destination Input]"
+                  hasSideEffects="true"
+                  name="SQL Server Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load ProductSubType\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[ProductTypeCode]"
+                      cachedDataType="i4"
+                      cachedName="ProductTypeCode"
+                      externalMetadataColumnId="Package\Load ProductSubType\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[ProductTypeCode]"
+                      lineageId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Output].Columns[ProductTypeCode]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load ProductSubType\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[ProductTypeCode]"
+                      dataType="i4"
+                      name="ProductTypeCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load ProductSubType\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[ProductTypeName]"
+                      dataType="wstr"
+                      length="50"
+                      name="ProductTypeName" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load ProductSubType.Paths[ADO NET Source Output]"
+              endId="Package\Load ProductSubType\SQL Server Destination.Inputs[SQL Server Destination Input]"
+              name="ADO NET Source Output"
+              startId="Package\Load ProductSubType\ADO NET Source.Outputs[ADO NET Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{C2D04F06-03F1-4E72-9819-A25CEC935546}"
+      DTS:From="Package\Load   ProductType"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Load ProductSubType" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{E3A85400-0FE8-48FA-A20E-490F539DA876}"
+      DTS:From="Package\Load ProductSubType"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Load Product" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{04B3701E-618B-4911-BA8F-7CDC1183D8F1}"
+      DTS:From="Package\Load Product"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Load Country" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{3FC31396-2400-4B8E-B031-0ED872CFEEA2}"
+      DTS:From="Package\Load Country"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Load Plant" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{D71B308F-5625-4136-BEB6-3FE400D05C39}"
+      DTS:From="Package\Load Plant"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Load Material-Machine Type-Machine" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql11">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load   ProductType"
+          TopLeft="275,76" />
+        <NodeLayout
+          Size="182,42"
+          Id="Package\Load ProductSubType"
+          TopLeft="268,174" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="359.75,118">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56"
+              Start="0,0"
+              End="0,48.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="141,42"
+          Id="Package\Load Product"
+          TopLeft="286,264" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="357.75,216">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48"
+              Start="0,0"
+              End="0,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="142,42"
+          Id="Package\Load Country"
+          TopLeft="285,347" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="356.25,306">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41"
+              Start="0,0"
+              End="0,33.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="128,42"
+          Id="Package\Load Plant"
+          TopLeft="287,463" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="353.5,389">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,74"
+              Start="0,0"
+              End="0,66.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,66.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="254,42"
+          Id="Package\Load Material-Machine Type-Machine"
+          TopLeft="551,459" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="415,482">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="136,0"
+              Start="0,0"
+              End="128.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="128.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Load   ProductType">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Load   ProductType\ADO NET Source"
+          TopLeft="301.818181818182,76.3636363636364" />
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Load   ProductType\SQL Server Destination"
+          TopLeft="287.272727272727,226.363636363636" />
+        <EdgeLayout
+          Id="Package\Load   ProductType.Paths[ADO NET Source Output]"
+          TopLeft="380.818181818182,118.363636363636">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-42.5454545454545,108"
+              Start="0,0"
+              End="-42.5454545454545,100.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,50"
+                    Point2="0,54"
+                    Point3="-4,54" />
+                  <mssgle:LineSegment
+                    End="-38.5454545454545,54" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-38.5454545454545,54"
+                    Point2="-42.5454545454545,54"
+                    Point3="-42.5454545454545,58" />
+                  <mssgle:LineSegment
+                    End="-42.5454545454545,100.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load   ProductType\ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load   ProductType\SQL Server Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load ProductSubType">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Load ProductSubType\ADO NET Source"
+          TopLeft="363,86" />
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Load ProductSubType\SQL Server Destination"
+          TopLeft="346,212" />
+        <EdgeLayout
+          Id="Package\Load ProductSubType.Paths[ADO NET Source Output]"
+          TopLeft="441,128">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,84"
+              Start="0,0"
+              End="0,76.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,76.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load ProductSubType\ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load ProductSubType\SQL Server Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load Product">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Load Product\ADO NET Source"
+          TopLeft="357,85" />
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Load Product\SQL Server Destination"
+          TopLeft="336,201" />
+        <EdgeLayout
+          Id="Package\Load Product.Paths[ADO NET Source Output]"
+          TopLeft="433,127">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,74"
+              Start="0,0"
+              End="0,66.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,66.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Product\ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Product\SQL Server Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load Country">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Load Country\ADO NET Source"
+          TopLeft="356,108" />
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Load Country\SQL Server Destination"
+          TopLeft="338,227" />
+        <EdgeLayout
+          Id="Package\Load Country.Paths[ADO NET Source Output]"
+          TopLeft="433.5,150">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,77"
+              Start="0,0"
+              End="0,69.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,69.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Country\ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Country\SQL Server Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load Plant">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Load Plant\ADO NET Source"
+          TopLeft="310,85" />
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Load Plant\SQL Server Destination"
+          TopLeft="299,222" />
+        <EdgeLayout
+          Id="Package\Load Plant.Paths[ADO NET Source Output]"
+          TopLeft="391,127">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,95"
+              Start="0,0"
+              End="0,87.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,87.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Plant\ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Plant\SQL Server Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load Material-Machine Type-Machine">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Load Material-Machine Type-Machine\ADO NET Source"
+          TopLeft="352,74" />
+        <NodeLayout
+          Size="200,42"
+          Id="Package\Load Material-Machine Type-Machine\File For Molding Machines"
+          TopLeft="333,174" />
+        <EdgeLayout
+          Id="Package\Load Material-Machine Type-Machine.Paths[ADO NET Source Output]"
+          TopLeft="432,116">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58"
+              Start="0,0"
+              End="0,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="120,42"
+          Id="Package\Load Material-Machine Type-Machine\Multicast"
+          TopLeft="372,258" />
+        <EdgeLayout
+          Id="Package\Load Material-Machine Type-Machine.Paths[Conditional Split Default Output]"
+          TopLeft="432.5,216">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42"
+              Start="0,0"
+              End="0,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-70.61390625,11.4208984375,141.2278125,11.658203125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="183,42"
+          Id="Package\Load Material-Machine Type-Machine\Aggregate By Material"
+          TopLeft="67,326" />
+        <EdgeLayout
+          Id="Package\Load Material-Machine Type-Machine.Paths[Multicast Output 1]"
+          TopLeft="413.333333333333,300">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-254.833333333333,26"
+              Start="0,0"
+              End="-254.833333333333,18.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,6.60526315789473" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,6.60526315789473"
+                    Point2="0,10.6052631578947"
+                    Point3="-4,10.6052631578947" />
+                  <mssgle:LineSegment
+                    End="-250.833333333333,10.6052631578947" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-250.833333333333,10.6052631578947"
+                    Point2="-254.833333333333,10.6052631578947"
+                    Point3="-254.833333333333,14.6052631578947" />
+                  <mssgle:LineSegment
+                    End="-254.833333333333,18.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="132,42"
+          Id="Package\Load Material-Machine Type-Machine\DimNatural"
+          TopLeft="88,409" />
+        <EdgeLayout
+          Id="Package\Load Material-Machine Type-Machine.Paths[Aggregate Output 1]"
+          TopLeft="156.25,368">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41"
+              Start="0,0"
+              End="0,33.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="210,42"
+          Id="Package\Load Material-Machine Type-Machine\Aggregate by Machine Type"
+          TopLeft="330,342" />
+        <EdgeLayout
+          Id="Package\Load Material-Machine Type-Machine.Paths[Multicast Output 2]"
+          TopLeft="433.5,300">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42"
+              Start="0,0"
+              End="0,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Load Material-Machine Type-Machine\DimMachineType"
+          TopLeft="352,408" />
+        <EdgeLayout
+          Id="Package\Load Material-Machine Type-Machine.Paths[Aggregate Output 11]"
+          TopLeft="433.25,384">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,24"
+              Start="0,0"
+              End="0,16.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="136,42"
+          Id="Package\Load Material-Machine Type-Machine\DimMachine"
+          TopLeft="639,349" />
+        <EdgeLayout
+          Id="Package\Load Material-Machine Type-Machine.Paths[Multicast Output 3]"
+          TopLeft="460,300">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="247,49"
+              Start="0,0"
+              End="247,41.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.0434782608696" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.0434782608696"
+                    Point2="0,17.0434782608696"
+                    Point3="4,17.0434782608696" />
+                  <mssgle:LineSegment
+                    End="243,17.0434782608696" />
+                  <mssgle:CubicBezierSegment
+                    Point1="243,17.0434782608696"
+                    Point2="247,17.0434782608696"
+                    Point3="247,21.0434782608696" />
+                  <mssgle:LineSegment
+                    End="247,41.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Material-Machine Type-Machine\ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Material-Machine Type-Machine\DimNatural">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Material-Machine Type-Machine\DimMachineType">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Material-Machine Type-Machine\DimMachine">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "InMaxMinfacturingDMFactLoad", "InMaxMinfacturingDMFactLoad.dtproj", "{FB7846F1-6532-41AA-89C9-8FB04737A067}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB7846F1-6532-41AA-89C9-8FB04737A067}.Development|Default.ActiveCfg = Development
+		{FB7846F1-6532-41AA-89C9-8FB04737A067}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,58 @@
+create table DimProduct(
+ProductCode int  Not NUll  ,
+ProductName nvarchar(50) not null ,
+ProductSubTypeCode int not null,
+Primary Key (ProductCode) ) ;
+create table DimProdctSubType(
+ProductSubTypeCode int not null,
+ProductSubTypeName nvarchar(50) not null,
+ProductTypeCode int not null,
+Primary Key (ProductSubTypeCode));
+create table DimProdctType(
+ProductTypeCode int not null,
+ProductTypeName Nvarchar(50),
+Primary Key(ProductTypeCode));
+create table DImBatch(
+BatchNumber int not null,
+BatchName Nvarchar(50),
+Primary Key(BatchNumber));
+create table DImMachine(
+MachineNumber int not null,
+MachineName Nvarchar(50) not null,
+MachineType Nvarchar(50) not null,
+PlantNumber int not null,
+Manufacturer Nvarchar not null,
+DateOfPurchase Datetime,
+Primary Key(MachineNumber));
+create table DimMachineType(
+MachineType Nvarchar(30) not null,
+Material Nvarchar(30) not null
+Primary Key(MachineType));
+create table DimMaterial(
+Material Nvarchar(30) not null
+primary key(Material));
+create table DimPlant(
+PlantNumber int not null,
+PlantName Nvarchar(30) not null,
+CountryCode NChar(2) not null,
+primary key (PlantNumber));
+create table Dimcountry(
+CountryCode Nchar(2) not null,
+CountryName Nvarchar(30) not null,
+primary key(CountryCode));
+create table DimProductType(
+ProductTypeCode int not null,
+ProductTypeName Nvarchar(50) not null,
+primary key(ProductTypeCode));
+create table DimProductType(
+ProductTypeCode int not null,
+ProductTypeName Nvarchar(50) not null,
+primary key(ProductTypeCode));
+create table ManufacturingFact(
+AcceptedProducts int not null,
+RejectedProducts int not null,
+ElapsedTimeForManufacture Decimal(6,2) not null,
+DateOfManufacture DateTime not null,
+ProductCode int not null,
+BatchNumber int not null,
+MachineNumber int not null);
